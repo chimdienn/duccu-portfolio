@@ -18,19 +18,19 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #1e3a8a 0%, #831843 50%, #581c87 100%);
+  background: linear-gradient(135deg, #2040ca 0%, #4704af 60%, #bc24d6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #1e3a8a 0%, #831843 50%, #581c87 100%);
+  background: linear-gradient(135deg, #2040ca 0%, #4704af 60%, #bc24d6 100%);
 }
 
 .gradient-border {
   position: relative;
-  background: linear-gradient(135deg, #1e3a8a 0%, #831843 50%, #581c87 100%);
+  background: linear-gradient(135deg, #2040ca 0%, #4704af 60%, #bc24d6 100%);
   padding: 2px;
 }
 
