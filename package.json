@@ -1,0 +1,16 @@
+{
+  "name": "duccu-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for duccu",
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "concurrently \"cd client && npm i && npm run build\" \"cd server && npm i && npm run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
