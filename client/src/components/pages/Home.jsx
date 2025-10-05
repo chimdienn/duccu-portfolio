@@ -80,7 +80,7 @@ const Home = () => {
             experiences and shipping things users actually love.
           </p>
 
-          <div className="gradient-border rounded-2xl mb-16 max-w-2xl">
+          <div className="gradient-border rounded-xl mb-16 max-w-2xl">
             <div className="gradient-border-inner p-6">
               <h2 className="text-2xl font-semibold mb-6">
                 Ready to dive deeper? Without further ado...
