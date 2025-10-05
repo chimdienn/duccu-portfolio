@@ -6,7 +6,7 @@ import "../../styles/home.css";
 const Home = () => {
   const navigate = useNavigate();
   const roles = useMemo(
-    () => ["Student", "Engineer", "Gamer", "Procrastinator"],
+    () => ["Student", "Engineer", "Developer", "Gamer", "Procrastinator"],
     []
   );
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
@@ -57,7 +57,7 @@ const Home = () => {
 
   return (
     <div className="pt-24 fade-in">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8">
         <div className="min-h-screen flex flex-col justify-center">
           <div className="text-3xl md:text-5xl mb-5 h-14 flex items-center">
             <span className="text-gray-300">I'm a </span>
@@ -69,28 +69,27 @@ const Home = () => {
             </span>
           </div>
 
-          <h1 className="text-6xl md:text-7xl font-bold mb-10">
+          <h1 className="text-7xl md:text-8xl font-bold mb-12">
             <span className="gradient-text">Quy Trong Duc Tran</span>{" "}
             <span className="my-blue">says hi!</span>
           </h1>
 
-          <p className="text-xl text-gray-300 mb-12 max-w-2xl">
-            A passionate full-stack developer with expertise in creating elegant
-            solutions to complex problems. I specialize in building modern web
-            applications that deliver exceptional user experiences.
+          <p className="text-2xl text-gray-300 mb-12 max-w-3xl">
+            A full-stack builder who turns messy problems into smooth web
+            applications. I care about performance, accessibility, digital
+            experiences and shipping things users actually love.
           </p>
 
-          <div className="gradient-border rounded-lg mb-16 max-w-2xl">
-            <div className="gradient-border-inner">
-              <h2 className="text-2xl font-semibold mb-4">
-                Interested? Find out more about my technical skills and
-                background
+          <div className="gradient-border rounded-2xl mb-16 max-w-2xl">
+            <div className="gradient-border-inner p-6">
+              <h2 className="text-2xl font-semibold mb-6">
+                Ready to dive deeper? Without further ado...
               </h2>
               <button
                 onClick={() => navigate("/about")}
                 className="gradient-bg text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity font-medium"
               >
-                Learn More
+                Let's Go!
               </button>
             </div>
           </div>
