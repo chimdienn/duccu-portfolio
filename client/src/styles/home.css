@@ -1,0 +1,39 @@
+/* Existing blue color */
+.my-blue {
+  color: #bbc8ff;
+}
+
+/* Typewriter cursor styling */
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.4em;
+  background-color: #bbc8ff;
+  margin-left: 3px;
+  position: relative;
+  top: 0.05em;
+  transition: opacity 0.1s ease;
+}
+
+/* Add a subtle glow effect to the cursor */
+.cursor {
+  box-shadow: 0 0 4px #bbc8ff, 0 0 8px rgba(187, 200, 255, 0.4);
+}
+
+/* Ensure proper spacing for the typewriter text */
+.typewriter-container {
+  min-width: 300px; /* Prevent layout shift */
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Add smooth color transition for the text */
+.my-blue {
+  transition: color 0.3s ease;
+}
+
+/* Optional: Add hover effect to the typewriter text */
+.my-blue:hover {
+  color: #a0b4ff;
+  text-shadow: 0 0 20px rgba(187, 200, 255, 0.5);
+}

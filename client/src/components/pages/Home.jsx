@@ -1,15 +1,79 @@
 // Home Page Component
 import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect, useMemo } from "react";
+import "../../styles/home.css";
+
 const Home = () => {
   const navigate = useNavigate();
+  const roles = useMemo(
+    () => ["Student", "Engineer", "Gamer", "Procrastinator"],
+    []
+  );
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isTyping, setIsTyping] = useState(true);
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    let timeout;
+
+    if (isTyping) {
+      // Typing animation
+      const currentRole = roles[currentRoleIndex];
+      if (displayText.length < currentRole.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(currentRole.slice(0, displayText.length + 1));
+        }, 80); // Typing speed
+      } else {
+        // Finished typing, wait before deleting
+        timeout = setTimeout(() => {
+          setIsTyping(false);
+        }, 1500); // Wait time before deleting
+      }
+    } else {
+      // Deleting animation
+      if (displayText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1));
+        }, 50); // Deleting speed (faster than typing)
+      } else {
+        // Finished deleting, move to next role
+        setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+        setIsTyping(true);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isTyping, currentRoleIndex, roles]);
+
+  // Cursor blinking effect
+  useEffect(() => {
+    const cursorInterval = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, 500); // Cursor blink speed
+
+    return () => clearInterval(cursorInterval);
+  }, []);
 
   return (
     <div className="pt-24 fade-in">
       <div className="container mx-auto px-6">
         <div className="min-h-screen flex flex-col justify-center">
-          <h1 className="text-6xl font-bold mb-6">
-            Hello, I'm <span className="gradient-text">Quy Trong Duc Tran</span>
+          <div className="text-3xl md:text-5xl mb-5 h-14 flex items-center">
+            <span className="text-gray-300">I'm a </span>
+            <span className="my-blue font-semibold ml-2 relative inline-flex items-center min-w-[180px] md:min-w-[250px]">
+              <span>{displayText}</span>
+              <span
+                className={`cursor ${showCursor ? "opacity-100" : "opacity-0"}`}
+              ></span>
+            </span>
+          </div>
+
+          <h1 className="text-6xl md:text-7xl font-bold mb-10">
+            <span className="gradient-text">Quy Trong Duc Tran</span>{" "}
+            <span className="my-blue">says hi!</span>
           </h1>
+
           <p className="text-xl text-gray-300 mb-12 max-w-2xl">
             A passionate full-stack developer with expertise in creating elegant
             solutions to complex problems. I specialize in building modern web
