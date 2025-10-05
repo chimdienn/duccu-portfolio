@@ -1,55 +1,60 @@
 // Experience Page Component
 import "../../styles/experience.css";
+import ai_ds_cubed_logo from "../../assets/experience/ai_ds_cubed_logo.png";
+import unimelb_logo from "../../assets/experience/unimelb_logo.svg";
+import bws_logo from "../../assets/experience/bws_logo.jpeg";
+import ivsum_logo from "../../assets/experience/ivsum_logo.png";
 
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      organization: "Tech Innovators Inc.",
-      logo: "🏢", // Replace with actual logo URL/image
-      techStack: ["react", "node-js", "python", "aws", "docker"],
-      time: "Aug 2022 - Present",
+      title: "AI Engineer",
+      organization: "AI @ DSCubed",
+      logo: ai_ds_cubed_logo, // Replace with actual logo URL/image
+      techStack: ["postgresql", "python", "javascript"],
+      time: "SEP 2025 - PRESENT",
       description: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Mentored junior developers and conducted code reviews",
-        "Improved application performance by 40% through optimization",
-        "Architected scalable cloud infrastructure on AWS",
+        "Contributed to a student engineering team to build an automonous AI agent",
+        "Vision of creating an AI that independently pursues organizational goals",
       ],
     },
     {
-      title: "Full Stack Developer",
-      organization: "Digital Solutions Ltd.",
-      logo: "💼", // Replace with actual logo URL/image
-      techStack: ["javascript", "react", "java", "postgresql", "git"],
-      time: "Jun 2020 - Jul 2022",
+      title: "Academic Tutor",
+      organization:
+        "School of Mathematics and Statistics, University of Melbourne",
+      logo: unimelb_logo, // Replace with actual logo URL/image
+      techStack: ["mathematics", "matlab", "m-file"],
+      time: "JUL 2025 - PRESENT",
       description: [
-        "Developed RESTful APIs and React-based frontend applications",
-        "Implemented CI/CD pipelines reducing deployment time by 60%",
-        "Collaborated with cross-functional teams in Agile environment",
+        "Delivered the MAST10007 Linear Algebra course to first-year university students",
+        "Facilitated weekly computer lab workshops for approximately 40 undergraduate students",
+        "Employed computational tools such as MATLAB, m-files, and GeoGebra applets",
+        "Offered tailored support to students, contributing to their academic progress",
       ],
     },
     {
-      title: "Junior Developer",
-      organization: "StartUp Hub",
-      logo: "🚀", // Replace with actual logo URL/image
-      techStack: ["python", "javascript", "html5", "css3", "mysql"],
-      time: "Sep 2019 - May 2020",
+      title: "Web Developer Intern",
+      organization: "Business Web Solutions",
+      logo: bws_logo, // Replace with actual logo URL/image
+      techStack: ["python", "javascript", "html5", "css3", "postgresql", "git"],
+      time: "APR 2025 - JUN 2020",
       description: [
-        "Built responsive web applications using modern JavaScript frameworks",
-        "Participated in full software development lifecycle",
-        "Contributed to open source projects and internal tools",
+        "Built over 20 real-world projects, mastering both front-end and back-end development",
+        "Completed comprehensive assignments, enhancing practical skills and problem-solving abilities",
+        "Managed project timelines independently while collaborating closely with team mentors",
       ],
     },
     {
-      title: "Software Engineering Intern",
-      organization: "Innovation Labs",
-      logo: "🔬", // Replace with actual logo URL/image
-      techStack: ["c", "cpp", "python", "git"],
-      time: "Jun 2019 - Aug 2019",
+      title: "Logistics Officer",
+      organization:
+        "Internation Vietnamese Student at The University of Melbourne (IVSUM)",
+      logo: ivsum_logo,
+      techStack: ["av-systems", "digital", "event-management", "logistics"],
+      time: "SEP 2024 - SEP 2025",
       description: [
-        "Developed automation scripts to improve testing efficiency",
-        "Assisted in debugging and optimizing legacy code",
-        "Participated in code reviews and team meetings",
+        "Planed and executed key activities, including Winter Camp and Music Night",
+        "Provided digital support for events by setting up AV systems, online registration platforms, and digital check-in processes",
+        "Fostered an inclusive and welcoming environment, interacting with students from diverse backgrounds",
       ],
     },
   ];
@@ -70,6 +75,16 @@ const Experience = () => {
     docker: "fab fa-docker",
     postgresql: "fas fa-database",
     mysql: "fas fa-database",
+
+    mathematics: "fas fa-square-root-alt", // Square root symbol
+    matlab: "fas fa-chart-line", // Chart icon (closest match)
+    "m-file": "fas fa-file-code", // Code file icon
+    geogebra: "fas fa-shapes",
+
+    logistics: "fas fa-truck-loading", // Logistics truck icon
+    "av-systems": "fas fa-video", // Video/AV equipment icon
+    digital: "fas fa-laptop", // Digital/computer icon
+    "event-management": "fas fa-calendar-check",
   };
 
   // Tech stack colors
@@ -88,6 +103,15 @@ const Experience = () => {
     docker: "text-blue-500",
     postgresql: "text-blue-600",
     mysql: "text-blue-500",
+
+    mathematics: "text-indigo-400", // Purple-blue for math
+    matlab: "text-orange-500", // MATLAB's brand color
+    "m-file": "text-gray-400",
+
+    logistics: "text-green-400", // Green for operations
+    "av-systems": "text-red-400", // Red for media/AV
+    digital: "text-blue-400", // Blue for digital/tech
+    "event-management": "text-purple-400",
   };
 
   return (
@@ -107,20 +131,23 @@ const Experience = () => {
               {/* Organization Logo */}
               <div className="flex justify-center mb-8">
                 <div className="w-24 h-24 bg-gray-800 rounded-full flex items-center justify-center text-4xl">
-                  {exp.logo}
-                  {/* Replace with actual image: 
-                  <img src={exp.logo} alt={exp.organization} className="w-full h-full rounded-full object-cover" />
-                  */}
+                  <img
+                    src={exp.logo}
+                    alt={exp.organization}
+                    className="w-full h-full rounded-full object-cover"
+                  />
                 </div>
               </div>
 
-              {/* Organization Name */}
+              {/* Role Title */}
               <h2 className="text-2xl font-bold mb-3 text-white">
-                {exp.organization}
+                {exp.title}
               </h2>
 
-              {/* Role Title */}
-              <h3 className="text-xl text-purple-400 mb-4">{exp.title}</h3>
+              {/* Organization Name */}
+              <h3 className="text-xl text-purple-400 mb-4">
+                {exp.organization}
+              </h3>
 
               {/* Tech Stack Icons */}
               <div className="flex gap-3 mb-4 flex-wrap">

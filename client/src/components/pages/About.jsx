@@ -1,4 +1,5 @@
 // About Page Component
+import duccu_avatar from "../../assets/about/duccu.jpg";
 const About = () => {
   const techStacks = {
     Frontend: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "HTML5/CSS3"],
@@ -9,29 +10,35 @@ const About = () => {
 
   return (
     <div className="pt-32 fade-in">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-12">
         <h1 className="text-5xl font-bold gradient-text mb-12 text-center">
           About Me
         </h1>
 
-        <div className="flex flex-col md:flex-row items-center gap-12 mb-16">
+        <div className="flex flex-col md:flex-row items-center gap-12 mb-16 p-6">
           <div className="w-64 h-64 rounded-full gradient-bg p-1 flex-shrink-0">
             <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center">
-              <i className="fas fa-user text-6xl text-gray-600"></i>
+              <img
+                src={duccu_avatar}
+                alt="Quy Trong Duc Tran"
+                className="w-full h-full rounded-full object-cover"
+              />
             </div>
           </div>
 
           <div className="flex-1">
-            <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate software engineer with over 5 years of experience
-              in building scalable web applications. My journey in tech started
-              with a curiosity about how things work on the internet, and has
-              evolved into a career focused on creating meaningful digital
-              experiences. I believe in writing clean, maintainable code and am
-              constantly learning new technologies to stay at the forefront of
-              web development. When I'm not coding, you can find me exploring
-              new technologies, contributing to open source, or mentoring
-              aspiring developers.
+            <p className="text-xl text-gray-300 leading-relaxed mb-3 pr-12">
+              Hello hello! I am <strong>Quy Trong Duc Tran</strong> — a
+              Computing & Software Systems student at the University of
+              Melbourne. I build full-stack web apps and am enthusiastic about
+              enhancing digital infrastructure. I love hunting down elegant
+              solutions to gnarly problems in algorithms, maths, and physics.
+            </p>
+            <p className="text-xl text-gray-300 leading-relaxed pr-12">
+              When I'm not deep in code, you'll find me at the gym, on the
+              football pitch, tennis court, or badminton court—I'm competitive
+              by nature. I also make time to explore new game releases and stay
+              on top of what's pushing boundaries in tech.
             </p>
           </div>
         </div>
