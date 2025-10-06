@@ -111,7 +111,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: gradient-wave 4s linear infinite;
+  animation: gradient-wave 5.2s linear infinite;
 }
 
 @keyframes gradient-wave {

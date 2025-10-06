@@ -58,7 +58,7 @@ const Home = () => {
   return (
     <div className="pt-24 fade-in">
       <div className="container mx-auto px-8">
-        <div className="min-h-screen flex flex-col justify-center">
+        <div className="flex flex-col justify-center pt-20">
           <div className="text-3xl md:text-5xl mb-5 h-14 flex items-center">
             <span className="text-gray-300">I'm a </span>
             <span className="my-blue font-semibold ml-2 relative inline-flex items-center min-w-[180px] md:min-w-[250px]">

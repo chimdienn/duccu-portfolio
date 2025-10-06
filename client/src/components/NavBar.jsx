@@ -24,13 +24,13 @@ const Navbar = () => {
           to="/"
           className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
         >
-          Portfolio
+          Duc Tran
         </Link>
         <div className="flex items-center space-x-8">
           <Link
             to="/about"
             className={`hover:text-purple-400 transition-colors ${
-              location.pathname === "/about" ? "gradient-text" : ""
+              location.pathname === "/about" ? "gradient-text-wave" : ""
             }`}
           >
             About
@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link
             to="/experience"
             className={`hover:text-purple-400 transition-colors ${
-              location.pathname === "/experience" ? "gradient-text" : ""
+              location.pathname === "/experience" ? "gradient-text-wave" : ""
             }`}
           >
             Experience
@@ -46,7 +46,7 @@ const Navbar = () => {
           <Link
             to="/projects"
             className={`hover:text-purple-400 transition-colors ${
-              location.pathname === "/projects" ? "gradient-text" : ""
+              location.pathname === "/projects" ? "gradient-text-wave" : ""
             }`}
           >
             Projects
@@ -54,7 +54,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             className={`hover:text-purple-400 transition-colors ${
-              location.pathname === "/contact" ? "gradient-text" : ""
+              location.pathname === "/contact" ? "gradient-text-wave" : ""
             }`}
           >
             Contact
