@@ -2,11 +2,19 @@
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration",
-      techStack: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com",
+      title: "GeoNotes",
+      description:
+        "Drop pins and add notes on a live, interactive map. Won the 'Best Overall' award at the Catylist Hackathon by CISSA.",
+      techStack: [
+        "Node.js",
+        "MongoDB",
+        "Google Maps API",
+        "Macrostrat API",
+        "PBDB API",
+      ],
+      github: "https://github.com/quangngz/GeoNotes",
       demo: "https://demo.com",
+      devpost: "https://devpost.com/software/geonotes-woy4ix#updates",
       image: "🛍️",
     },
     {
@@ -83,23 +91,37 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-4">
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:opacity-90 transition-opacity font-semibold uppercase tracking-wide"
-                  >
-                    Live Demo
-                  </a>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-2.5 border border-gray-700 rounded-lg hover:bg-gray-800 transition-colors font-semibold uppercase tracking-wide"
+                    >
+                      <i className="fab fa-github mr-2"></i>GitHub
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:opacity-90 transition-opacity font-semibold uppercase tracking-wide"
+                    >
+                      Live Demo
+                    </a>
+                  )}
 
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-6 py-2.5 border border-gray-700 rounded-lg hover:bg-gray-800 transition-colors font-semibold uppercase tracking-wide"
-                  >
-                    <i className="fab fa-github mr-2"></i>GitHub
-                  </a>
+                  {project.devpost && (
+                    <a
+                      href={project.devpost}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:opacity-90 transition-opacity font-semibold uppercase tracking-wide"
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
