@@ -1,4 +1,5 @@
 // Projects Page Component
+import geonotes_img from "../../assets/projects/geonotes.jpg";
 import weather_forecast_img from "../../assets/projects/weather_forecast.jpg";
 import german_traffic_sign_img from "../../assets/projects/german_traffic_sign.jpg";
 import care_scheduling_img from "../../assets/projects/care_scheduling.jpg";
@@ -17,7 +18,7 @@ const Projects = () => {
       ],
       github: "https://github.com/quangngz/GeoNotes",
       devpost: "https://devpost.com/software/geonotes-woy4ix#updates",
-      image: "🛍️",
+      image: geonotes_img,
     },
     {
       title: "Care Scheduling Program",
@@ -189,7 +190,6 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Portfolio Callout */}
         <div className="relative">
           <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-gray-700 hover:border-purple-500 transition-all duration-300 text-center">
             <div className="text-6xl mb-4">🎨✨</div>
