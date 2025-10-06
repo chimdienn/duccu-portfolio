@@ -137,6 +137,7 @@ const Contact = () => {
                 <p>• Each pump earns you $0.05</p>
                 <p>• Bank your money anytime to keep it safe</p>
                 <p>• But beware: pump too much and the balloon POPS! 💥</p>
+                <p>• Each balloon pops after a random number of pumps. 💥</p>
                 <p>• If it pops, you lose that round's money</p>
                 <p className="text-purple-400 font-semibold pt-2">
                   How greedy will you be? 😈

@@ -70,7 +70,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="pt-32 fade-in pb-16">
+    <div className="pt-32 fade-in">
       <div className="container mx-auto px-6 max-w-6xl">
         <h1 className="text-5xl font-bold gradient-text mb-6 pb-4">Projects</h1>
         <p className="text-gray-400 text-lg mb-8">

@@ -97,24 +97,46 @@ const Home = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <Link
               to="/experience"
-              className="card-hover bg-gray-900/50 backdrop-blur-sm rounded-lg p-8 text-center"
+              className="group relative overflow-hidden bg-gray-900/80 rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-gray-800"
             >
-              <i className="fas fa-briefcase text-4xl gradient-text mb-4"></i>
-              <h3 className="text-2xl font-bold mb-2">Experience</h3>
-              <p className="text-gray-400">
-                Explore my professional journey and achievements
-              </p>
+              {/* Background gradient - starts subtle, becomes vibrant on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 opacity-5 group-hover:opacity-20 transition-opacity duration-500"></div>
+
+              {/* Content */}
+              <div className="relative p-8 text-center">
+                <i className="fas fa-briefcase text-4xl text-gray-500 group-hover:text-blue-400 transition-colors duration-500 mb-4 inline-block transform group-hover:scale-110"></i>
+                <h3 className="text-2xl font-bold mb-2 text-gray-200 group-hover:text-white transition-colors duration-500">
+                  Experience
+                </h3>
+                <p className="text-gray-500 group-hover:text-gray-300 transition-colors duration-500">
+                  Explore my professional journey and achievements
+                </p>
+              </div>
+
+              {/* Animated border on hover */}
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-blue-500/50 rounded-lg transition-all duration-500"></div>
             </Link>
 
             <Link
               to="/projects"
-              className="card-hover bg-gray-900/50 backdrop-blur-sm rounded-lg p-8 text-center"
+              className="group relative overflow-hidden bg-gray-900/80 rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-2xl border border-gray-800"
             >
-              <i className="fas fa-code text-4xl gradient-text mb-4"></i>
-              <h3 className="text-2xl font-bold mb-2">Projects</h3>
-              <p className="text-gray-400">
-                Discover my latest work and innovations
-              </p>
+              {/* Background gradient */}
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-pink-600 to-red-600 opacity-5 group-hover:opacity-20 transition-opacity duration-500"></div>
+
+              {/* Content */}
+              <div className="relative p-8 text-center">
+                <i className="fas fa-code text-4xl text-gray-500 group-hover:text-purple-400 transition-colors duration-500 mb-4 inline-block transform group-hover:scale-110"></i>
+                <h3 className="text-2xl font-bold mb-2 text-gray-200 group-hover:text-white transition-colors duration-500">
+                  Projects
+                </h3>
+                <p className="text-gray-500 group-hover:text-gray-300 transition-colors duration-500">
+                  Discover my latest work and innovations
+                </p>
+              </div>
+
+              {/* Animated border */}
+              <div className="absolute inset-0 border-2 border-transparent group-hover:border-purple-500/50 rounded-lg transition-all duration-500"></div>
             </Link>
           </div>
         </div>
