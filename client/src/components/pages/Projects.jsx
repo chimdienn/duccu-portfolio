@@ -1,4 +1,7 @@
 // Projects Page Component
+import weather_forecast_img from "../../assets/projects/weather_forecast.jpg";
+import german_traffic_sign_img from "../../assets/projects/german_traffic_sign.jpg";
+import care_scheduling_img from "../../assets/projects/care_scheduling.jpg";
 const Projects = () => {
   const projects = [
     {
@@ -23,7 +26,7 @@ const Projects = () => {
       techStack: ["Node.js", "Express", "React", "MongoDB"],
       github: "https://github.com",
       demo: "https://scheduling-of-care-aba0b844abd1.herokuapp.com/",
-      image: "📋",
+      image: care_scheduling_img,
     },
     {
       title: "Weather Forecast",
@@ -32,7 +35,7 @@ const Projects = () => {
       techStack: ["jQuery", "HTML/CSS", "OpenWeather API"],
       github: "https://github.com/chimdienn/WeatherForecast",
       demo: "https://chimdienn.github.io/WeatherForecast/",
-      image: "🤖",
+      image: weather_forecast_img,
     },
     {
       title: "German Traffic Sign Classifier",
@@ -40,28 +43,28 @@ const Projects = () => {
         "Classify German traffic signs into 43 categories using deep learning.",
       techStack: ["Python", "sklearn", "tensorflow", "keras"],
       github: "https://github.com/chimdienn/TrafficSignClassification",
-      image: "🌤️",
+      image: german_traffic_sign_img,
     },
   ];
 
   const minorProjects = [
     {
-      title: "Algorithm Visualizer",
+      title: "Shadow Taxi",
       description:
-        "Interactive tool to visualize sorting and pathfinding algorithms in real-time.",
+        "A 'Driving Taxi' fun, interactive game built in Java using Bagel Game Engine.",
+      github: "https://github.com/chimdienn/ShadowTaxi",
+    },
+    {
+      title: "To My Valentine",
+      description:
+        "A valentine gift for my beloved - with cute animations and romantic confessions.",
       github: "https://github.com",
     },
     {
-      title: "Study Timer App",
+      title: "Birthday Simon",
       description:
-        "Pomodoro technique timer with task tracking and productivity stats.",
-      github: "https://github.com",
-    },
-    {
-      title: "Recipe Finder",
-      description:
-        "Search recipes by ingredients you have at home using Spoonacular API.",
-      github: "https://github.com",
+        "A memory game where players repeat a sequence of colors and sounds. Happy birthday! 🎉",
+      github: "https://github.com/chimdienn/birthday_simon_game",
     },
   ];
 
@@ -70,7 +73,7 @@ const Projects = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <h1 className="text-5xl font-bold gradient-text mb-6 pb-4">Projects</h1>
         <p className="text-gray-400 text-lg mb-8">
-          Work I'm proud of - have a peek.
+          I am so proud of these wonders. Have a peek!
         </p>
 
         {/* Main Projects */}
@@ -87,8 +90,19 @@ const Projects = () => {
                 rel="noopener noreferrer"
                 className="md:w-1/3 flex-shrink-0"
               >
-                <div className="h-64 md:h-full bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
-                  <span className="text-8xl">{project.image}</span>
+                <div className="h-64 bg-gradient-to-br from-blue-900 to-purple-900 flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer overflow-hidden">
+                  {typeof project.image === "string" &&
+                  project.image.length <= 2 ? (
+                    // Display emoji if it's a short string (emoji)
+                    <span className="text-8xl">{project.image}</span>
+                  ) : (
+                    // Display actual image
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  )}
                 </div>
               </a>
 
@@ -180,15 +194,16 @@ const Projects = () => {
           <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-8 border-2 border-gray-700 hover:border-purple-500 transition-all duration-300 text-center">
             <div className="text-6xl mb-4">🎨✨</div>
             <h3 className="text-2xl font-bold mb-4">
-              Oh, and one more thing...
+              Oh wait. Did I miss something?...
             </h3>
             <p className="text-gray-300 text-lg mb-4 max-w-2xl mx-auto">
-              This portfolio website you're browsing right now? Yeah, that's
-              actually one of my favorite projects! Built from scratch with
-              React, Tailwind CSS, and a whole lot of coffee. ☕
+              This portfolio website we're browsing right now? Yasss, that's
+              actually one of my favorite projects! Powered by Express, built
+              with React and beautified by TailwindCSS. Ah, supported by a bunch
+              of coffee, too! ☕
             </p>
             <p className="text-gray-400 text-sm italic">
-              Meta, right? A project showcasing projects. Projectception. 🤯
+              A project showcasing projects? Projectception. 🤯
             </p>
           </div>
         </div>
