@@ -11,15 +11,17 @@ import Contact from "./components/pages/Contact";
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen">
+      <div className="min-h-screen flex flex-col">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </BrowserRouter>

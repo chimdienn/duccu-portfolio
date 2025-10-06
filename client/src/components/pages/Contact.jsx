@@ -22,8 +22,8 @@ const Contact = () => {
     setPumps(0);
     setRoundMoney(0);
     setPopped(false);
-    // Random pop threshold between 5 and 20 pumps
-    setPopThreshold(Math.floor(Math.random() * 16) + 5);
+    // Random pop threshold between 4 and 20 pumps
+    setPopThreshold(Math.floor(Math.random() * 17) + 4);
   };
 
   const pumpBalloon = () => {
@@ -93,9 +93,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="pt-32 fade-in pb-16">
+    <div className="pt-20 fade-in pb-8">
       <div className="container mx-auto px-6">
-        <div className="min-h-screen flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center pt-20 pb-12">
           <h1 className="text-5xl font-bold gradient-text mb-12 pb-4 text-center">
             Wanna get in touch?
           </h1>
