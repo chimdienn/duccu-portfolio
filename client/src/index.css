@@ -97,3 +97,28 @@ body {
   transform: scale(1.2);
   filter: drop-shadow(0 0 10px rgba(131, 24, 67, 0.5));
 }
+
+.gradient-text-wave {
+  background: linear-gradient(
+    270deg,
+    #2040ca 0%,
+    #4704af 25%,
+    #bc24d6 50%,
+    #4704af 75%,
+    #2040ca 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-wave 4s linear infinite;
+}
+
+@keyframes gradient-wave {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}

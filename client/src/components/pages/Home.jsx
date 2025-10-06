@@ -70,7 +70,7 @@ const Home = () => {
           </div>
 
           <h1 className="text-7xl md:text-8xl font-bold mb-12">
-            <span className="gradient-text">Quy Trong Duc Tran</span>{" "}
+            <span className="gradient-text-wave">Quy Trong Duc Tran</span>{" "}
             <span className="my-blue">says hi!</span>
           </h1>
 
