@@ -60,7 +60,7 @@ const Navbar = () => {
             Contact
           </Link>
           <a
-            href="https://drive.google.com/your-resume-link"
+            href="https://drive.google.com/file/d/1VPvp0MteNPnZ1hToLpLstc5dp4FE_wIm/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="gradient-bg text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity font-medium"
