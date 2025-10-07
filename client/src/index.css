@@ -67,6 +67,11 @@ body {
   background: rgba(10, 10, 10, 0.8);
 }
 
+.navbar-blur-dark {
+  backdrop-filter: blur(16px);
+  background: rgba(10, 10, 10, 0.92);
+}
+
 .carousel-container {
   overflow-x: auto;
   scrollbar-width: thin;

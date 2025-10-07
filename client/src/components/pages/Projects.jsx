@@ -140,9 +140,9 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 md:px-6 py-2 md:py-2.5 border border-gray-700 rounded-lg hover:bg-gray-800 transition-colors font-semibold uppercase tracking-wide text-xs md:text-sm"
+                      className="w-24 md:w-28 py-2 md:py-2.5 border border-gray-700 rounded-lg hover:bg-gray-800 transition-colors font-semibold uppercase tracking-wide text-xs md:text-sm text-center"
                     >
-                      <i className="fab fa-github mr-1 md:mr-2"></i>GitHub
+                      <i className="fab fa-github mr-1"></i>GitHub
                     </a>
                   )}
                   {project.demo && (
@@ -150,7 +150,7 @@ const Projects = () => {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 md:px-6 py-2 md:py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:opacity-90 transition-opacity font-semibold uppercase tracking-wide text-xs md:text-sm"
+                      className="w-24 md:w-28 py-2 md:py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:opacity-90 transition-opacity font-semibold uppercase tracking-wide text-xs md:text-sm text-center"
                     >
                       Live Demo
                     </a>
@@ -160,9 +160,9 @@ const Projects = () => {
                       href={project.devpost}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-4 md:px-6 py-2 md:py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:opacity-90 transition-opacity font-semibold uppercase tracking-wide text-xs md:text-sm"
+                      className="w-24 md:w-28 py-2 md:py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:opacity-90 transition-opacity font-semibold uppercase tracking-wide text-xs md:text-sm text-center"
                     >
-                      DEVPOST
+                      Devpost
                     </a>
                   )}
                 </div>

@@ -116,10 +116,10 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       <div
-        className={`md:hidden fixed left-0 right-0 bg-black/95 backdrop-blur-lg border-t border-gray-800 transition-all duration-300 overflow-hidden ${
+        className={`md:hidden fixed left-0 right-0 navbar-blur-dark transition-all duration-300 overflow-hidden ${
           mobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
-        style={{ top: scrolled ? "72px" : "88px" }}
+        style={{ top: "60px" }}
       >
         <div className="flex flex-col py-6 px-6 space-y-4">
           <Link
