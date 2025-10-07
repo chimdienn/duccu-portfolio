@@ -27,6 +27,18 @@ body {
 .gradient-bg {
   background: linear-gradient(135deg, #2040ca 0%, #4704af 60%, #bc24d6 100%);
 }
+.gradient-bg-wave {
+  background: linear-gradient(
+    270deg,
+    #2040ca 0%,
+    #4704af 25%,
+    #bc24d6 50%,
+    #4704af 75%,
+    #2040ca 100%
+  );
+  background-size: 200% auto;
+  animation: gradient-wave 9s linear infinite;
+}
 
 .gradient-border {
   position: relative;

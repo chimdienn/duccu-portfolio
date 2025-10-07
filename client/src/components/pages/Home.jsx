@@ -75,7 +75,7 @@ const Home = () => {
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-8 md:mb-12 max-w-3xl">
-            A full-stack builder who turns messy problems into smooth web
+            A full-stack builder who turns messy problems into smooth
             applications. I care about performance, accessibility, digital
             experiences and shipping things users actually love.
           </p>

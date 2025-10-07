@@ -124,42 +124,47 @@ const Navbar = () => {
         <div className="flex flex-col py-6 px-6 space-y-4">
           <Link
             to="/about"
-            className={`text-lg hover:text-purple-400 transition-colors py-2 ${
+            className={`text-lg hover:text-purple-400 transition-colors py-2 flex items-center ${
               location.pathname === "/about" ? "gradient-text-wave" : ""
             }`}
           >
+            <i className="fas fa-user mr-3 w-5"></i>
             About
           </Link>
           <Link
             to="/experience"
-            className={`text-lg hover:text-purple-400 transition-colors py-2 ${
+            className={`text-lg hover:text-purple-400 transition-colors py-2 flex items-center ${
               location.pathname === "/experience" ? "gradient-text-wave" : ""
             }`}
           >
+            <i className="fas fa-briefcase mr-3 w-5"></i>
             Experience
           </Link>
           <Link
             to="/projects"
-            className={`text-lg hover:text-purple-400 transition-colors py-2 ${
+            className={`text-lg hover:text-purple-400 transition-colors py-2 flex items-center ${
               location.pathname === "/projects" ? "gradient-text-wave" : ""
             }`}
           >
+            <i className="fas fa-code mr-3 w-5"></i>
             Projects
           </Link>
           <Link
             to="/contact"
-            className={`text-lg hover:text-purple-400 transition-colors py-2 ${
+            className={`text-lg hover:text-purple-400 transition-colors py-2 flex items-center ${
               location.pathname === "/contact" ? "gradient-text-wave" : ""
             }`}
           >
+            <i className="fas fa-envelope mr-3 w-5"></i>
             Contact
           </Link>
           <a
             href="https://drive.google.com/file/d/1VPvp0MteNPnZ1hToLpLstc5dp4FE_wIm/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="gradient-bg text-white px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity font-medium text-center mt-2"
+            className="gradient-bg text-white px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity font-medium text-center mt-2 flex items-center justify-center"
           >
+            <i className="fas fa-file-alt mr-2"></i>
             Resume
           </a>
         </div>
