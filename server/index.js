@@ -32,12 +32,13 @@ app.get("/api/portfolio-data", (_req, res) => {
     name: "Quy Trong Duc Tran",
     title: "Full Stack Developer",
     email: "your.email@example.com",
-    resumeUrl: "https://drive.google.com/your-resume-link",
+    resumeUrl:
+      "https://drive.google.com/file/d/1VPvp0MteNPnZ1hToLpLstc5dp4FE_wIm/view?usp=sharing",
     social: {
-      github: "https://github.com/yourusername",
-      linkedin: "https://linkedin.com/in/yourusername",
-      facebook: "https://facebook.com/yourusername",
-      instagram: "https://instagram.com/yourusername",
+      github: "https://github.com/chimdienn",
+      facebook: "https://www.facebook.com/duckukie/",
+      instagram: "https://www.instagram.com/_duckieee_/",
+      linkedin: "https://www.linkedin.com/in/quytrongductran/",
     },
   });
 });
