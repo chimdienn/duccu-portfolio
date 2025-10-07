@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "navbar-blur py-4" : "pt-4 pb-6"
+        scrolled ? "navbar-blur py-4 md:pt-6" : "pt-4 md:pt-8 pb-6"
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -124,7 +124,7 @@ const Navbar = () => {
         className={`md:hidden fixed left-0 right-0 navbar-blur-dark transition-all duration-300 overflow-hidden ${
           mobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
-        style={{ top: "60px" }}
+        style={{ top: "65px" }}
       >
         <div className="flex flex-col py-6 px-6 space-y-4">
           <Link
