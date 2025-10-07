@@ -1,13 +1,15 @@
 {
   "name": "duccu-portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio website for duccu",
+  "description": "Personal portfolio website for Quy Trong Duc Tran",
   "engines": {
     "node": "18.x",
     "npm": "9.x"
   },
   "scripts": {
     "start": "node server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "npm run build",
     "dev": "concurrently \"cd client && npm i && npm run build\" \"cd server && npm i && npm run dev\""
   },
   "dependencies": {

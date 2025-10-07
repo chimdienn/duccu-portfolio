@@ -7,11 +7,10 @@ import fs from "fs";
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Recreate __dirname in ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Resolve client build directory (supports CRA `build/` or Vite `dist/`)
+// Resolve client build directory
 const clientRoot = path.resolve(__dirname, "..", "client");
 const buildDir = fs.existsSync(path.join(clientRoot, "build"))
   ? path.join(clientRoot, "build")
@@ -43,7 +42,7 @@ app.get("/api/portfolio-data", (_req, res) => {
   });
 });
 
-// SPA fallback — serve index.html for all other routes
+// SPA fallback
 app.get(/^\/(?!api\/).*/, (_req, res) => {
   res.sendFile(path.join(buildDir, "index.html"));
 });
