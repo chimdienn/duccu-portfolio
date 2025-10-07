@@ -197,10 +197,11 @@ const Projects = () => {
               Oh wait. Did I miss something?...
             </h3>
             <p className="text-gray-300 text-lg mb-4 max-w-2xl mx-auto">
-              This portfolio website we're browsing right now? Yasss, that's
-              actually one of my favorite projects! Powered by Express, built
-              with React and beautified by TailwindCSS. Ah, supported by a bunch
-              of coffee, too! ☕
+              This <strong>portfolio website</strong> we're browsing right now?
+              Yasss, that's actually one of my favorite projects! Powered by{" "}
+              <strong>Express</strong>, built with <strong>React</strong> and
+              beautified by <strong>TailwindCSS</strong>. Ah, supported by a
+              bunch of coffee, too! ☕
             </p>
             <p className="text-gray-400 text-sm italic">
               A project showcasing projects? Projectception. 🤯
