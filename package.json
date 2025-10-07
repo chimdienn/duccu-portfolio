@@ -8,9 +8,10 @@
   },
   "scripts": {
     "start": "node server/index.js",
-    "build": "cd client && npm install && npm run build",
+    "heroku-prebuild": "npm --prefix server ci || npm --prefix server install",
+    "build": "NPM_CONFIG_PRODUCTION=false npm --prefix client install --include=dev && npm --prefix client run build",
     "heroku-postbuild": "npm run build",
-    "dev": "concurrently \"cd client && npm i && npm run build\" \"cd server && npm i && npm run dev\""
+    "dev": "concurrently \"cd client && npm i && npm run dev\" \"cd server && npm i && npm run dev\""
   },
   "dependencies": {
     "concurrently": "^7.6.0"
