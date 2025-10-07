@@ -54,7 +54,7 @@ const About = () => {
   return (
     <div className="pt-20 md:pt-32 fade-in pb-4 md:pb-8">
       <div className="container mx-auto px-4 md:px-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text mb-6 md:mb-12 text-center mt-4 md:mt-2">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text mb-4 md:mb-6 md:mb-12 text-center mt-4 md:mt-2">
           About Me
         </h1>
 
@@ -102,7 +102,7 @@ const About = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 sm:px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base ${
+              className={`w-24 sm:w-28 md:w-32 py-2 md:py-3 rounded-lg font-semibold transition-all duration-300 text-sm sm:text-base ${
                 activeCategory === category
                   ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white"
                   : "bg-gray-900/50 text-gray-400 hover:bg-gray-800 border border-gray-800"
