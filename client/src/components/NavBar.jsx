@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "navbar-blur py-4" : "py-6"
+        scrolled ? "navbar-blur py-4" : "pt-4 pb-6"
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
