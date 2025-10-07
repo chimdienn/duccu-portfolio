@@ -4,7 +4,7 @@ A clean, fancy web app for showing who I am - Node.js + Express on the backend, 
 
 🚀 Live Demo
 
-Heroku:
+Heroku: https://duc-tran-d671c541cbc3.herokuapp.com/
 
 🧰 Tech Stack
 
@@ -33,4 +33,5 @@ Easy local dev with a single command
 🖼️ Snapshots
 
 ![alt text](home.png)
+
 ![alt text](projects.png)
