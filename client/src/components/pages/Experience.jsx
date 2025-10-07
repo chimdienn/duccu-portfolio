@@ -10,8 +10,8 @@ const Experience = () => {
     {
       title: "AI Engineer",
       organization: "AI @ DSCubed",
-      logo: ai_ds_cubed_logo, // Replace with actual logo URL/image
-      techStack: ["postgresql", "python", "javascript"],
+      logo: ai_ds_cubed_logo,
+      techStack: ["python", "javascript", "postgresql"],
       time: "SEP 2025 - PRESENT",
       description: [
         "Contributed to a student engineering team to build an automonous AI agent",
@@ -22,7 +22,7 @@ const Experience = () => {
       title: "Academic Tutor",
       organization:
         "School of Mathematics and Statistics, University of Melbourne",
-      logo: unimelb_logo, // Replace with actual logo URL/image
+      logo: unimelb_logo,
       techStack: ["mathematics", "matlab", "m-file"],
       time: "JUL 2025 - PRESENT",
       description: [
@@ -35,7 +35,7 @@ const Experience = () => {
     {
       title: "Web Developer Intern",
       organization: "Business Web Solutions",
-      logo: bws_logo, // Replace with actual logo URL/image
+      logo: bws_logo,
       techStack: ["python", "javascript", "html5", "css3", "postgresql", "git"],
       time: "APR 2025 - JUN 2020",
       description: [
@@ -76,14 +76,14 @@ const Experience = () => {
     postgresql: "fas fa-database",
     mysql: "fas fa-database",
 
-    mathematics: "fas fa-square-root-alt", // Square root symbol
-    matlab: "fas fa-chart-line", // Chart icon (closest match)
-    "m-file": "fas fa-file-code", // Code file icon
+    mathematics: "fas fa-square-root-alt",
+    matlab: "fas fa-chart-line",
+    "m-file": "fas fa-file-code",
     geogebra: "fas fa-shapes",
 
-    logistics: "fas fa-truck-loading", // Logistics truck icon
-    "av-systems": "fas fa-video", // Video/AV equipment icon
-    digital: "fas fa-laptop", // Digital/computer icon
+    logistics: "fas fa-truck-loading",
+    "av-systems": "fas fa-video",
+    digital: "fas fa-laptop",
     "event-management": "fas fa-calendar-check",
   };
 
@@ -104,33 +104,33 @@ const Experience = () => {
     postgresql: "text-blue-600",
     mysql: "text-blue-500",
 
-    mathematics: "text-indigo-400", // Purple-blue for math
-    matlab: "text-orange-500", // MATLAB's brand color
+    mathematics: "text-indigo-400",
+    matlab: "text-orange-500",
     "m-file": "text-gray-400",
 
-    logistics: "text-green-400", // Green for operations
-    "av-systems": "text-red-400", // Red for media/AV
-    digital: "text-blue-400", // Blue for digital/tech
+    logistics: "text-green-400",
+    "av-systems": "text-red-400",
+    digital: "text-blue-400",
     "event-management": "text-purple-400",
   };
 
   return (
-    <div className="pt-32 fade-in">
-      <div className="container mx-auto px-6">
-        <h1 className="text-5xl font-bold gradient-text mb-20 text-center">
+    <div className="pt-20 md:pt-32 fade-in pb-8">
+      <div className="container mx-auto px-4 md:px-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold gradient-text mb-12 md:mb-20 text-center mt-6 md:mt4">
           E X P E R I E N C E
         </h1>
 
-        <div className="carousel-container flex gap-8 pb-8 overflow-x-auto snap-x snap-mandatory">
+        <div className="carousel-container flex gap-4 md:gap-8 pb-6 md:pb-8 overflow-x-auto snap-x snap-mandatory px-4 md:px-0">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-[45vw] min-w-[500px] max-w-[600px] bg-gray-900/50 backdrop-blur-sm rounded-xl p-10 border border-gray-800 card-hover snap-center"
-              style={{ minHeight: "60vh" }}
+              className="flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[45vw] min-w-[280px] md:min-w-[500px] max-w-[600px] bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 md:p-10 border border-gray-800 card-hover snap-center mx-auto"
+              style={{ minHeight: "auto" }}
             >
               {/* Organization Logo */}
-              <div className="flex justify-center mb-8">
-                <div className="w-24 h-24 bg-gray-800 rounded-full flex items-center justify-center text-4xl">
+              <div className="flex justify-center mb-6 md:mb-8">
+                <div className="w-16 h-16 md:w-24 md:h-24 bg-gray-800 rounded-full flex items-center justify-center">
                   <img
                     src={exp.logo}
                     alt={exp.organization}
@@ -140,25 +140,25 @@ const Experience = () => {
               </div>
 
               {/* Role Title */}
-              <h2 className="text-2xl font-bold mb-3 text-white">
+              <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3 text-white text-center md:text-left">
                 {exp.title}
               </h2>
 
               {/* Organization Name */}
-              <h3 className="text-xl text-purple-400 mb-4">
+              <h3 className="text-base md:text-xl text-purple-400 mb-3 md:mb-4 text-center md:text-left">
                 {exp.organization}
               </h3>
 
               {/* Tech Stack Icons */}
-              <div className="flex gap-3 mb-4 flex-wrap">
+              <div className="flex gap-2 md:gap-3 mb-3 md:mb-4 flex-wrap justify-center md:justify-start">
                 {exp.techStack.map((tech, i) => (
                   <div key={i} className="relative group">
                     <i
-                      className={`${techIcons[tech]} text-2xl ${techColors[tech]} hover:scale-110 transition-transform cursor-pointer`}
+                      className={`${techIcons[tech]} text-xl md:text-2xl ${techColors[tech]} hover:scale-110 transition-transform cursor-pointer`}
                       title={tech.replace("-", " ").toUpperCase()}
                     ></i>
                     {/* Tooltip */}
-                    <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                    <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none z-10">
                       {tech.replace("-", " ").toUpperCase()}
                     </span>
                   </div>
@@ -166,19 +166,21 @@ const Experience = () => {
               </div>
 
               {/* Duration */}
-              <p className="text-gray-400 text-sm mb-6 flex items-center">
+              <p className="text-gray-400 text-xs md:text-sm mb-4 md:mb-6 flex items-center justify-center md:justify-start">
                 <i className="far fa-calendar-alt mr-2"></i>
                 {exp.time}
               </p>
 
               {/* Description Points */}
-              <ul className="space-y-3">
+              <ul className="space-y-2 md:space-y-3">
                 {exp.description.map((item, i) => (
                   <li key={i} className="text-gray-300 flex items-start">
-                    <span className="text-purple-400 mr-3 mt-1.5 text-xs">
+                    <span className="text-purple-400 mr-2 md:mr-3 mt-1 md:mt-1.5 text-xs flex-shrink-0">
                       <i className="fas fa-chevron-right"></i>
                     </span>
-                    <span className="text-sm leading-relaxed">{item}</span>
+                    <span className="text-xs md:text-sm leading-relaxed">
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -187,8 +189,8 @@ const Experience = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="flex justify-center mt-8">
-          <p className="text-gray-500 text-sm flex items-center">
+        <div className="flex justify-center mt-6 md:mt-8">
+          <p className="text-gray-500 text-xs md:text-sm flex items-center">
             <i className="fas fa-arrows-alt-h mr-2"></i>
             Scroll horizontally to see more
           </p>
