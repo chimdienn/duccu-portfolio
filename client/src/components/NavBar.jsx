@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import duckLogo from "../assets/duck.svg";
 
 const Navbar = () => {
   const location = useLocation();
@@ -40,9 +41,13 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link
           to="/"
-          className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
+          className="flex items-center hover:opacity-80 transition-opacity"
         >
-          Duc Tran
+          <img
+            src={duckLogo}
+            alt="Duc Tran Logo"
+            className="md:h-12 md:w-12 w-9 h-9"
+          />
         </Link>
 
         {/* Desktop Navigation */}
