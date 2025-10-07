@@ -66,7 +66,6 @@ const Contact = () => {
     setTotalMoney(0);
     setBankedRounds([]);
     setGameState("playing");
-    resetRound();
   };
 
   const handleEmailClick = () => {
