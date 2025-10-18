@@ -37,7 +37,7 @@ const Experience = () => {
       organization: "Business Web Solutions",
       logo: bws_logo,
       techStack: ["python", "javascript", "html5", "css3", "postgresql", "git"],
-      time: "APR 2025 - JUN 2020",
+      time: "APR 2025 - JUN 2025",
       description: [
         "Built over 20 real-world projects, mastering both front-end and back-end development",
         "Completed comprehensive assignments, enhancing practical skills and problem-solving abilities",
