@@ -213,22 +213,28 @@ const Projects = () => {
 
         {/* Portfolio Callout */}
         <div className="relative">
-          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-6 md:p-8 border-2 border-gray-700 hover:border-purple-500 transition-all duration-300 text-center">
-            <div className="text-4xl md:text-6xl mb-3 md:mb-4">🎨✨</div>
-            <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
-              Oh wait. Did I miss something?...
-            </h3>
-            <p className="text-gray-300 text-sm md:text-lg mb-3 md:mb-4 max-w-2xl mx-auto">
-              This <strong>portfolio website</strong> we're browsing right now?
-              Yasss, that's actually one of my favorite projects! Powered by{" "}
-              <strong>Express</strong>, built with <strong>React</strong> and
-              beautified by <strong>TailwindCSS</strong>. Ah, supported by a
-              bunch of coffee, too! ☕
-            </p>
-            <p className="text-gray-400 text-xs md:text-sm italic">
-              A project showcasing projects? Projectception. 🤯
-            </p>
-          </div>
+          <a
+            href="https://github.com/chimdienn/duccu-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-6 md:p-8 border-2 border-gray-700 hover:border-purple-500 transition-all duration-300 text-center">
+              <div className="text-4xl md:text-6xl mb-3 md:mb-4">🎨✨</div>
+              <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">
+                Oh wait. Did I miss something?...
+              </h3>
+              <p className="text-gray-300 text-sm md:text-lg mb-3 md:mb-4 max-w-2xl mx-auto">
+                This <strong>portfolio website</strong> we're browsing right
+                now? Yasss, that's actually one of my favorite projects! Powered
+                by <strong>Express</strong>, built with <strong>React</strong>{" "}
+                and beautified by <strong>TailwindCSS</strong>. Ah, supported by
+                a bunch of coffee, too! ☕
+              </p>
+              <p className="text-gray-400 text-xs md:text-sm italic">
+                A project showcasing projects? Projectception. 🤯
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
