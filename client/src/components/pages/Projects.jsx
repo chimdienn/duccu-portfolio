@@ -3,6 +3,7 @@ import geonotes_img from "../../assets/projects/geonotes.jpg";
 import weather_forecast_img from "../../assets/projects/weather_forecast.jpg";
 import german_traffic_sign_img from "../../assets/projects/german_traffic_sign.jpg";
 import care_scheduling_img from "../../assets/projects/care_scheduling.jpg";
+import love_maze_img from "../../assets/projects/love_maze.jpg";
 
 const Projects = () => {
   const projects = [
@@ -20,6 +21,15 @@ const Projects = () => {
       github: "https://github.com/quangngz/GeoNotes",
       devpost: "https://devpost.com/software/geonotes-woy4ix#updates",
       image: geonotes_img,
+    },
+    {
+      title: "Love Maze Game",
+      description:
+        "A couple navigate through procedurally generated mazes to beat each other's best times.",
+      techStack: ["Node.js", "Express.js", "MongoDB", "Graph Algorithms"],
+      github: "https://github.com/chimdienn/LoveMazeGame",
+      demo: "https://love-maze-game-a689575429c5.herokuapp.com/",
+      image: love_maze_img,
     },
     {
       title: "Care Scheduling Program",
