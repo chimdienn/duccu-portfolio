@@ -70,7 +70,7 @@ const Projects = () => {
       title: "To My Valentine",
       description:
         "A valentine gift for my beloved - with cute animations and romantic confessions.",
-      github: "https://github.com",
+      github: "https://github.com/chimdienn/a-valentine-gift",
     },
     {
       title: "Birthday Simon",
