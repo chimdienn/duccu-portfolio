@@ -4,9 +4,22 @@ import ai_ds_cubed_logo from "../../assets/experience/ai_ds_cubed_logo.png";
 import unimelb_logo from "../../assets/experience/unimelb_logo.svg";
 import bws_logo from "../../assets/experience/bws_logo.jpeg";
 import ivsum_logo from "../../assets/experience/ivsum_logo.png";
+import singalarity_logo from "../../assets/experience/singalarity_logo.jpg";
 
 const Experience = () => {
   const experiences = [
+    {
+      title: "Technical Intern",
+      organization: "Singalarity JSC",
+      logo: singalarity_logo,
+      techStack: ["security", "linux", "gcp", "AI agents", "docker", "golang"],
+      time: "NOV 2025 - PRESENT",
+      description: [
+        "Strengthened security best practices for cloud-based authentication and authorization services",
+        "Optimized backend performance through strategic Linux system configurations and service-level enhancements using Golang",
+        "Designed and deployed autonomous AI agents using Docker containerization on Google Cloud Platform (GCP)",
+      ],
+    },
     {
       title: "AI Engineer",
       organization: "AI @ DSCubed",
@@ -85,6 +98,12 @@ const Experience = () => {
     "av-systems": "fas fa-video",
     digital: "fas fa-laptop",
     "event-management": "fas fa-calendar-check",
+
+    security: "fas fa-shield-alt",
+    linux: "fab fa-linux",
+    gcp: "fas fa-cloud",
+    "ai agents": "fas fa-robot",
+    golang: "fab fa-golang",
   };
 
   // Tech stack colors
@@ -112,6 +131,12 @@ const Experience = () => {
     "av-systems": "text-red-400",
     digital: "text-blue-400",
     "event-management": "text-purple-400",
+
+    security: "text-red-500",
+    linux: "text-yellow-500",
+    gcp: "text-blue-400",
+    "ai agents": "text-purple-500",
+    golang: "text-cyan-500",
   };
 
   return (
