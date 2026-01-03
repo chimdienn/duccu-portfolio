@@ -4,6 +4,7 @@ import weather_forecast_img from "../../assets/projects/weather_forecast.jpg";
 import german_traffic_sign_img from "../../assets/projects/german_traffic_sign.jpg";
 import care_scheduling_img from "../../assets/projects/care_scheduling.jpg";
 import love_maze_img from "../../assets/projects/love_maze.jpg";
+import recording_summariser_img from "../../assets/projects/recording_summariser.jpg";
 
 const Projects = () => {
   const projects = [
@@ -30,6 +31,14 @@ const Projects = () => {
       github: "https://github.com/chimdienn/LoveMazeGame",
       demo: "https://love-maze-game-a689575429c5.herokuapp.com/",
       image: love_maze_img,
+    },
+    {
+      title: "Recording Summariser",
+      description:
+        "Upload lecture recordings and get AI-powered transcriptions, summaries, and key points using OpenAI Whisper and GPT-4.",
+      techStack: ["Node.js", "OpenAI API", "React", "Express", "MongoDB"],
+      github: "https://github.com/chimdienn/recording-summariser", // TODO: Update link
+      image: recording_summariser_img,
     },
     {
       title: "Care Scheduling Program",
