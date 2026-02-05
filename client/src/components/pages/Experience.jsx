@@ -1,6 +1,5 @@
 // Experience Page Component
 import "../../styles/experience.css";
-import ai_ds_cubed_logo from "../../assets/experience/ai_ds_cubed_logo.png";
 import unimelb_logo from "../../assets/experience/unimelb_logo.svg";
 import bws_logo from "../../assets/experience/bws_logo.jpeg";
 import ivsum_logo from "../../assets/experience/ivsum_logo.png";
@@ -18,17 +17,6 @@ const Experience = () => {
         "Strengthened security best practices for cloud-based authentication and authorization services",
         "Optimized backend performance through strategic Linux system configurations and service-level enhancements using Golang",
         "Designed and deployed autonomous AI agents using Docker containerization on Google Cloud Platform (GCP)",
-      ],
-    },
-    {
-      title: "AI Engineer",
-      organization: "AI @ DSCubed",
-      logo: ai_ds_cubed_logo,
-      techStack: ["python", "javascript", "postgresql"],
-      time: "SEP 2025 - PRESENT",
-      description: [
-        "Contributed to a student engineering team to build an automonous AI agent",
-        "Vision of creating an AI that independently pursues organizational goals",
       ],
     },
     {
