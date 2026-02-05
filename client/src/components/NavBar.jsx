@@ -86,7 +86,7 @@ const Navbar = () => {
           </Link>
 
           <a
-            href="https://drive.google.com/file/d/1VPvp0MteNPnZ1hToLpLstc5dp4FE_wIm/view?usp=sharing"
+            href="https://drive.google.com/file/d/1WsoiHATwEphIzpG6WmN7NXsz3qZfb5sC/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="gradient-bg text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity font-medium text-lg"
@@ -164,7 +164,7 @@ const Navbar = () => {
             Contact
           </Link>
           <a
-            href="https://drive.google.com/file/d/1VPvp0MteNPnZ1hToLpLstc5dp4FE_wIm/view?usp=sharing"
+            href="https://drive.google.com/file/d/1WsoiHATwEphIzpG6WmN7NXsz3qZfb5sC/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="gradient-bg text-white px-6 py-2.5 rounded-full hover:opacity-90 transition-opacity font-medium text-center mt-2 flex items-center justify-center"
