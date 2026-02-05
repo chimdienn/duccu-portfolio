@@ -1,5 +1,6 @@
 // Projects Page Component
 import geonotes_img from "../../assets/projects/geonotes.jpg";
+import pitstop_img from "../../assets/projects/pit-stop.png";
 import weather_forecast_img from "../../assets/projects/weather_forecast.jpg";
 import german_traffic_sign_img from "../../assets/projects/german_traffic_sign.jpg";
 import care_scheduling_img from "../../assets/projects/care_scheduling.jpg";
@@ -22,6 +23,21 @@ const Projects = () => {
       github: "https://github.com/quangngz/GeoNotes",
       devpost: "https://devpost.com/software/geonotes-woy4ix#updates",
       image: geonotes_img,
+    },
+    {
+      title: "Pit Stop",
+      description:
+        "A AI-powered smart route optimizer that finds the best stops along your journey.",
+      techStack: [
+        "Node.js",
+        "Google Maps API",
+        "Gemini API",
+        "Local Storage",
+        "Geolocation",
+      ],
+      github: "https://github.com/chimdienn/PitStops",
+      demo: "https://pit-stop-chi.vercel.app/",
+      image: pitstop_img,
     },
     {
       title: "Love Maze Game",

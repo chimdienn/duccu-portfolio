@@ -36,7 +36,7 @@ app.get("/api/portfolio-data", (_req, res) => {
     title: "Full Stack Developer",
     email: "your.email@example.com",
     resumeUrl:
-      "https://drive.google.com/file/d/1VPvp0MteNPnZ1hToLpLstc5dp4FE_wIm/view?usp=sharing",
+      "https://drive.google.com/file/d/1WsoiHATwEphIzpG6WmN7NXsz3qZfb5sC/view?usp=sharing",
     social: {
       github: "https://github.com/chimdienn",
       facebook: "https://www.facebook.com/duckukie/",
